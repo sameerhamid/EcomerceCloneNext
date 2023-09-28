@@ -1,0 +1,53 @@
+
+.common_kupos_capsule_menu {
+    &.capsule_menu {
+        background: #ff5c60;
+        border-radius: 75px;
+        padding: 8px 15px;
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        justify-content: space-around;
+    }    
+    p{
+        margin-bottom: 0;
+        line-height: 1.25;
+    }
+    .capsule_menu_icon{
+        padding: 8px;
+        img {
+            width: 26px;
+            height: auto;
+        }
+    }
+    .capsule_menu_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: #fff;
+            margin-left: 10px;
+        }
+    }
+    .capsule_menu_item.active .capsule_menu_icon {
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    .capsule_menu_item.no_active_icon .capsule_menu_icon {
+        background-color: transparent;
+
+    }
+    .mid{
+        // min-width: 25%;
+    }
+    .sort_icon {
+        height: 26px;
+        width: auto;
+        margin-left: 8px;
+        &.desc{
+            transform: rotate(180deg);
+        }
+    }
+}

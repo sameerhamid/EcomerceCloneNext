@@ -1,0 +1,215 @@
+.common_kupos_calendar {
+  width: 260px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 1px 1px 16px 0px rgba(0, 0, 0, 0.08);
+
+  b {
+    font-weight: normal !important;
+  }
+
+  .month_label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    padding: 10px;
+
+    img {
+      filter: grayscale(1);
+      width: 22px;
+      height: auto;
+      position: static;
+      margin: 0;
+    }
+
+    .svg_span {
+      width: 15px;
+      position: static;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+
+  .week_days {
+    display: flex;
+    text-align: center;
+
+    .unit {
+      background-color: transparent;
+      flex: 1;
+      color: var(--primary-color);
+      padding: 5px 0;
+    }
+  }
+
+  .monyear {
+    margin-top: 2px;
+  }
+
+  .monyear.select_month_year b {
+    position: relative;
+  }
+
+  .monyear.select_month_year b:nth-child(1) {
+    margin-right: 20px;
+  }
+
+  .monyear.select_month_year b img {
+    margin-left: 5px;
+    margin-top: -3px;
+  }
+
+  .days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .day_number {
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+
+    .day_number_inner {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      padding-top: 5px;
+    }
+
+    &.selected .day_number_inner {
+      background-color: var(--light-primary-color);
+      color: var(--primary-color);
+    }
+
+    &.past .day_number_inner,
+    &.deactivate .day_number_inner {
+      opacity: 0.3;
+    }
+
+    &.next-month {
+      height: 0px;
+    }
+  }
+
+  .month-picker {
+    .react-month-picker .calendar-container {
+      left: 0;
+      border-radius: 10px;
+      border: 0;
+      top: 8px;
+      box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .month_label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--primary-color);
+      color: #fff;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .month-label .svg-span {
+      width: 15px;
+      position: static;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .month-label .monyear {
+      margin-top: 2px;
+    }
+
+    .month-calendar {
+      position: absolute;
+      width: 260px;
+      top: 0px;
+      left: 0;
+      border-radius: 10px;
+      color: #464647;
+    }
+
+    .col_mp {
+      display: block;
+      float: left;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .span_1_of_3_mp {
+      width: calc(33.33% - 24px);
+      margin: 2px 12px;
+    }
+
+    .col_mp {
+      padding-bottom: 7px;
+      padding-top: 9px;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+
+    .calendar-container.readonly .col_mp:hover {
+      background-color: transparent;
+      cursor: default;
+      color: inherit;
+    }
+
+    .col_mp:hover {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      font-style: normal;
+    }
+
+    .selected_date_mp {
+      font-size: 12px;
+      color: darkslateblue;
+      font-weight: bold;
+    }
+
+    .selected_cell {
+      background-color: var(--light-primary-color);
+      color: var(--primary-color);
+      border-radius: 5px;
+      font-style: normal;
+    }
+  }
+
+  .month-calendar-capsule {
+    background: var(--secondary-color);
+    border-radius: 75px;
+    /* height: 30px; */
+    display: flex;
+    width: 220px;
+    align-items: center;
+    color: var(--white-color);
+    /* margin-top: 30px; */
+    position: relative;
+    cursor: pointer;
+
+    .click-container {
+      width: 100%;
+      height: 100%;
+      padding: 8px 30px;
+      padding-top: 9px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

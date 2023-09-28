@@ -1,0 +1,68 @@
+.common_kupos_date_picker {
+  position: relative;
+  width: 100%;
+  color: #464647;
+
+  // margin-top: 15px;
+  &>div {
+    position: relative;
+  }
+
+  input {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 10px;
+    // height: 70px;
+    border: 1px solid var(--border-color);
+    // font-size: 1em;
+    padding-left: 35px !important;
+    // margin-top: 15px;
+    color: var(--primary-text-color);
+    width: 100%;
+    padding-right: 5px;
+    height: 40px !important;
+  }
+
+  .hPEdlB {
+    font-family: 'AvenirNextLTPro-Regular', sans-serif;
+  }
+
+  .date-inner {
+    // height: 70px;
+  }
+
+  &.error input {
+    border-color: red;
+  }
+
+  img {
+    z-index: 9;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    width: 22px;
+    margin-top: -11px;
+    height: auto;
+  }
+
+  span.svg_span {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: 6px;
+  }
+
+  span.error {
+    color: red;
+    font-size: 0.6em;
+    margin-top: 5px;
+    display: block;
+  }
+
+  .date_picker_calendar {
+    position: absolute;
+    z-index: 100;
+  }
+}

@@ -1,0 +1,54 @@
+.common_kupos_steps {
+    background-color: #cecece;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: 25px 0;
+    color: #fff;
+    a{
+        &.kupos_step_item {
+            flex: 1;
+            text-align: center;
+            display: block;
+            padding: 7px;
+            color: #fff;
+            border-radius: 0 20px 20px 0;
+            border-right: 1px solid #fff;
+            z-index: 2;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.active {
+                background-color: var(--secondary-color);
+                position: relative;
+                left: -10px;
+                z-index: 1;
+                padding-left: 10px;
+                &:after {
+                    content: '';
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    width: 26px;
+                    background-color: #ff5c60;
+                    right: -11px;
+                    border-radius: 0 20px 20px 0;
+                }
+            }
+        }
+    }
+
+    span.step_number {
+        display: flex;
+        border-radius: 20px;
+        width: 23px;
+        height: 23px;
+        border: 1px solid #fff;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        padding-top: 3px;
+    }
+}

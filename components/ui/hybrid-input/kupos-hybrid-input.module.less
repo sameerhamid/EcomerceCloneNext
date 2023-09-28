@@ -1,0 +1,68 @@
+.common_kupos_input {
+    width: 100%;
+
+    .input_outer {
+        border-radius: 10px;
+        align-items: center;
+        margin-top: 3px;
+        overflow: hidden;
+        box-shadow: none;
+        position: relative;
+        border: 1px solid var(--border-color);
+        height: 40px;
+
+
+        .icon_left {
+            height: 50%;
+            position: relative;
+            left: 6px;
+            width: auto;
+        }
+
+        &.error {
+            border-color: red;
+        }
+    }
+
+    input {
+        width: 100%;
+        border-radius: 10px;
+        height: 40px;
+        padding: 10px;
+        padding-top: 12px;
+        border: 0;
+        flex: 1;
+        box-shadow: none;
+        color: var(--primary-text-color);
+        background-color: white;
+        margin-right: 12px;
+    }
+
+
+
+    .country-code-container {
+        border-right: 1px solid #ccc;
+
+        input {
+            width: 100%;
+            min-width: initial;
+        }
+    }
+
+    span.error {
+        color: red;
+        font-size: 0.6em;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .icon-right {
+        margin-right: 10px;
+    }
+
+    .cross {
+        position: absolute;
+        right: 6px;
+        /* right: 10px; */
+    }
+}

@@ -1,0 +1,82 @@
+.common_kupos_checkbox {
+  display: inline;
+
+  .icon_selection_circle_not_selected,
+  .icon_selection_circle_selected,
+  .icon_check_square_pink,
+  .icon_check_square_pink_line {
+    display: inline-block;
+    background: url("/images/icons/check-sprite.png") no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+    background-size: 200% 200%;
+    position: relative;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon_selection_circle_not_selected {
+    background-position: -0 -0;
+  }
+
+  .icon_selection_circle_selected {
+    background-position: 100% -0%;
+  }
+
+  .icon_check_square_pink {
+    background-position: -0% 100%;
+  }
+
+  .icon_check_square_pink_line {
+    background-position: 100% 100%;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .kupos_checkbox {
+    display: inline-block;
+    // width: 18px;
+    // height: 18px;
+    // border: 1px solid var(--secondary-color);
+    // overflow: hidden;
+    margin-right: 10px;
+
+    &.circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  img {
+    display: none;
+  }
+
+  // input:checked + span {
+  // background-color: var(--secondary-color);
+  // display: block;
+  // height: 50%;
+  // width: 50%;
+  // border-radius: 50%;
+  // margin-top: 25%;
+  // margin-left: 25%;
+  // }
+  input:checked+img {
+    display: block;
+  }
+
+  .checkbox_label {
+    margin-top: 2px;
+
+  }
+}

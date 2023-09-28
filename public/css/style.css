@@ -1,0 +1,360 @@
+:root {
+  --primary-color: #111;
+  --secondary-color: #aaa;
+  --light-primary-color: #fef1ec;
+  --light-color: #f3f3f3;
+  --dark-color: #000;
+  --max-width: 1100px;
+  --border-color: #ddd;
+  --white-color: #fff;
+  --primary-text-color: #464647;
+  --orange-color: #ca5008;
+  --blue-color: rgba(33, 89, 158, 1);
+  --ikea-font: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
+    sans-serif !important;
+  /* font-family: var(--ikea-font); */
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Light";
+  src: url("../fonts/AvenirLTStd-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Regular";
+  src: url("../fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Demi";
+  src: url("../fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Bold";
+  src: url("../fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AvenirNextLTPro-Black";
+  src: url("../fonts/AvenirLTStd-Black.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-7 {
+  font-size: 7px;
+}
+.font-10 {
+  font-size: 10px;
+}
+.font-12 {
+  font-size: 12px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-16 {
+  font-size: 16px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-24 {
+  font-size: 24px;
+}
+.font-25 {
+  font-size: 25px;
+}
+.font-28 {
+  font-size: 28px;
+}
+.font-30 {
+  font-size: 30px;
+}
+.font-32 {
+  font-size: 32px;
+}
+.font-34 {
+  font-size: 34px;
+}
+.font-36 {
+  font-size: 36px;
+}
+.font-38 {
+  font-size: 38px;
+}
+.font-40 {
+  font-size: 40px;
+}
+
+.font55-75 {
+  font-size: 55.75pt !important;
+}
+.font7 {
+  font-size: 7pt !important;
+}
+.font8 {
+  font-size: 8pt !important;
+}
+.font9 {
+  font-size: 9pt !important;
+}
+.font10-42 {
+  font-size: 10.42pt !important;
+}
+.font10 {
+  font-size: 10pt !important;
+}
+.font11 {
+  font-size: 11pt !important;
+}
+.font12 {
+  font-size: 12pt !important;
+}
+.font13 {
+  font-size: 13pt !important;
+}
+.font13-25 {
+  font-size: 13.25pt !important;
+}
+.font14 {
+  font-size: 14pt !important;
+}
+.font15 {
+  font-size: 15pt !important;
+}
+.font16 {
+  font-size: 16pt !important;
+}
+.font18 {
+  font-size: 18pt !important;
+}
+.font20 {
+  font-size: 20pt !important;
+}
+.font22 {
+  font-size: 22pt !important;
+}
+.font24 {
+  font-size: 24pt !important;
+}
+.font26 {
+  font-size: 26pt !important;
+}
+.font30 {
+  font-size: 30pt !important;
+}
+.font32 {
+  font-size: 32pt !important;
+}
+.font33 {
+  font-size: 33pt !important;
+}
+.font39 {
+  font-size: 39pt !important;
+}
+.font40 {
+  font-size: 40pt !important;
+}
+.font42 {
+  font-size: 42pt !important;
+}
+.font47 {
+  font-size: 47pt !important;
+}
+.font48 {
+  font-size: 48pt !important;
+}
+
+.strike-out-text {
+  text-decoration: line-through;
+}
+
+.margin-T10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.color-black {
+  color: #000000;
+}
+
+body,
+.load-transition {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+/* time picker titlew animation */
+@keyframes time_picker_title {
+  0% {
+    background-color: white;
+    /* visibility: hidden; */
+    /* width: 0%; */
+  }
+  100% {
+    background-color: var(--secondary-color);
+    /* width: 100%; */
+    /* visibility: visible; */
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loader-cricle,
+.loader-cricle:after {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-top: -3px;
+}
+.loader-cricle {
+  margin: 0px auto;
+  margin-top: -3px;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.title{
+  color: black;font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bold-text{
+
+  font-family: "AvenirNextLTPro-Bold";
+  
+}
+
+.text-center{
+  text-align: center;
+}
+
+
+
+.mt0{
+  margin-top: 0px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+.mt40{
+  margin-top: 40px;
+}
+.mt50{
+  margin-top: 50px;
+}
+
+
+
+
