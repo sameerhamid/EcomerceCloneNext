@@ -96,6 +96,13 @@ input {
 
 // ------------------------- UTILITY CLASSES ----------------------  
 
+
+.mb20{
+  margin-bottom: 20px !important;
+}
+.line{
+  height: 1px;background-color: var(--primary-text-color); width: 100%;
+}
 .kupos-card {
   background: #fff;
   padding: 16px;
@@ -288,5 +295,47 @@ div[aria-labelledby="live-chat-modal"] .modal-dialog{
     }
 
 
+  }
+}
+
+
+// colelctions styling started
+.collections_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+
+
+  .collection{
+     cursor: pointer;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+
+.collection_slides_wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+  .collection_slide {
+    .img_container {
+      img{
+        width: 100%;
+        height: 500px;
+        object-fit: center;
+        aspect-ratio: 3/8;
+      }
+    }
+
+    .collection_slide_details{
+      background-color: red;
+      margin-top: -6px;
+      padding: 20px;
+      height: 200px;
+      color: white;
+    }
   }
 }
