@@ -53,7 +53,7 @@ function Home() {
           <div className="title font20 bold-text">
             {offerimg.title}
           </div>
-          <div>
+          <div className="desc">
             {offerimg.desc}
           </div>
         </div>
@@ -86,7 +86,7 @@ function Home() {
         <div>{familyoffer.validity}</div >
         <div>{familyoffer.supplylasts}</div >
         <div className="icons"> <div className="carticon" ><img src={familyoffer.cart} /> </div >
-          <div className="likeicon"><img src={familyoffer.like} /> </div ></div>
+          <div className="likeicon">{familyoffer.like} </div ></div>
       </div>
     </div>
 
@@ -173,7 +173,7 @@ function Home() {
 
   ]
   const familyoffers = [
-    { id: 0, image: "/images/slides/familyoffer1.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "/images/slides/like.png" },
+    { id: 0, image: "/images/slides/familyoffer1.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "<AiOutlineHeart/>" },
     { id: 1, image: "/images/slides/familyoffer2.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "/images/slides/like.png" },
     { id: 2, image: "/images/slides/familyoffer3.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "/images/slides/like.png" },
 
@@ -242,7 +242,7 @@ function Home() {
       <ContentContainer>
 
         <Fragment >
-          <div className="things_wrapper mt20 mb20">
+          <div className="things_wrapper mt40 ">
             <div className="istthing">
               {topthings.slice(0, 1).map((thing) => <Thing thing={thing} />)} </div>
             <div className="secondthing">
@@ -251,7 +251,7 @@ function Home() {
               {topthings.slice(3, 5).map((thing) => <Thing thing={thing} />)} </div></div>
         </Fragment>
         <Fragment>
-          <div className="title mt20 bold-text text-center font20">
+          <div className="title mt40 bold-text text-center font20">
             Top Products
           </div>
           <div className="products_wrapper">
@@ -263,7 +263,7 @@ function Home() {
 
         <Fragment>
 
-          <div className="slide_wrapper">
+          <div className="slide_wrapper mt40 ">
 
             {slideimages?.map((slide) => <Slides slide={slide} />)}
           </div>
@@ -271,7 +271,7 @@ function Home() {
         </Fragment>
 
         <Fragment>
-          <div className="offers_wrapper mt20 mb20" >
+          <div className="offers_wrapper mt40 " >
             <AliceCarousel
               responsive={{ 0: { items: 1 }, 1024: { items: 3 }, 768: { items: 3 } }}
               autoPlay={true}
@@ -285,7 +285,7 @@ function Home() {
           </div>
         </Fragment>
         <Fragment>
-          <div className="title mt20 bold-text text-center font20">
+          <div className="title mt40 bold-text text-center font20">
             What's NEW at IKEA
           </div>
           <div className="whatsnew_wrapper">
@@ -302,12 +302,12 @@ function Home() {
           </div>
         </Fragment>
         <Fragment>
-          <div className="familyoffers_wrapper">
+          <div className="familyoffers_wrapper mt40">
             {familyoffers?.map((familyoffer, key) => <Family familyoffer={familyoffer} />)}
           </div>
         </Fragment>
         <Fragment>
-          <div className="title mt20 mb20 bold-text font20">A lot more for a lot less</div>
+          <div className="title mt40 bold-text font20">A lot more for a lot less</div>
 
           <div className="storage_items_wrapper">
             <AliceCarousel
@@ -327,7 +327,7 @@ function Home() {
           <div className="desc">
             Ideas based on your recently viewed products
           </div>
-          <div className="looks_wrapper mt20 mb20">
+          <div className="looks_wrapper mt40 ">
             <AliceCarousel
               responsive={{ 0: { items: 1 }, 1024: { items: 3 }, 768: { items: 2 } }}
               autoPlay={true}
@@ -339,7 +339,7 @@ function Home() {
           </div>
         </Fragment>
         <Fragment>
-          <div className="title bold-text font20">
+          <div className="title bold-text font20 mt40">
             More ideas and inspiration
           </div>
           <div className="ideaBtns_Wrapper">
@@ -348,7 +348,7 @@ function Home() {
           </div>
         </Fragment>
         <Fragment>
-          <div className="ideasimages_container  mb20">
+          <div className="ideasimages_container mt40 mb20">
             <div className="istidea1">
               {ideasimages?.slice(0, 1).map((item) => <Whatnew item={item} />)}
             </div>
