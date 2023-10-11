@@ -1,4 +1,4 @@
-import TncSection from "../../components/tnc/tnc";
+// import TncSection from "../../components/tnc/tnc";
 import ContentContainer from "../../components/ui/content-container/content-container";
 import MainWrapper from "../../components/ui/wrapper/wrapper";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -8,7 +8,7 @@ const TnC = () => {
   return (
     <MainWrapper t={t}>
       <ContentContainer>
-      <TncSection />
+        <TncSection />
       </ContentContainer>
     </MainWrapper>
   );

@@ -1,3 +1,5 @@
+import NavbarSec from "../../myComponents/NavbarSec";
+import ShowMenu from "../../myComponents/ShowMenu"
 import Footer from "../footer";
 import Header from "../header";
 import classes from "./wrapper.module.less";
@@ -7,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 const MainWrapper = ({ children, navbarType = 1, navChild, t }) => {
   return (
     <div className={classes.main_wrapper}>
-      {navbarType == 1 ? <Header /> : <Header>{navChild}</Header>}
+      <NavbarSec />
       {children}
       <Footer />
       <ToastContainer
