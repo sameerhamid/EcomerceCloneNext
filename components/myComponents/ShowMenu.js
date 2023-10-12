@@ -29,6 +29,10 @@ const menu = ({ onClick }) => {
                         <p className='title text-xs'>Our stores</p>
                         <p className='title text-xs'>Customer service</p>
                         <p className='title text-xs'>Download the IKEA app</p>
+                        <p className='title text-xs'>Download the IKEA app</p>
+                        <p className='title text-xs'>Download the IKEA app</p>
+                        <p className='title text-xs'>Download the IKEA app</p>
+
                     </div>
                 </div>
 

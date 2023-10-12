@@ -27,10 +27,11 @@ function Navbar() {
                 Now buy IKEA Gift Cards online
             </div>
             <div className='searchbar_icon_container'>
-                <div className='menu_icon'>
-                    <div><AiOutlineMenu className='icon menu-icon' onClick={() => setmenu(!menu)} /> {menu && <ShowMenu onClick={() => setmenu(false)} />}
-                    </div>
-                    <span>Menu</span>
+
+
+                <div className='menu_icon_wrapper'>
+                    <AiOutlineMenu className='icon menu-icon' onClick={() => setmenu(!menu)} />
+                    {menu && <ShowMenu onClick={() => setmenu(false)} />}
 
                 </div>
 

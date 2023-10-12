@@ -7,6 +7,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Carousel } from "react-responsive-carousel";
 import { useRouter } from "next/router";
+import { AiOutlineHeart } from 'react-icons/ai'
 
 
 
@@ -86,7 +87,7 @@ function Home() {
         <div>{familyoffer.validity}</div >
         <div>{familyoffer.supplylasts}</div >
         <div className="icons"> <div className="carticon" ><img src={familyoffer.cart} /> </div >
-          <div className="likeicon">{familyoffer.like} </div ></div>
+          <div className="likeicon"><AiOutlineHeart className="heart_icon" /></div ></div>
       </div>
     </div>
 
@@ -173,7 +174,7 @@ function Home() {
 
   ]
   const familyoffers = [
-    { id: 0, image: "/images/slides/familyoffer1.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "<AiOutlineHeart/>" },
+    { id: 0, image: "/images/slides/familyoffer1.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "" },
     { id: 1, image: "/images/slides/familyoffer2.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "/images/slides/like.png" },
     { id: 2, image: "/images/slides/familyoffer3.avif", title: "IKEA Family price", brand: "IKEA 365+", itemfeature: "Food container with lid,3.1 | (105 oz)", normalprice: "Normal price Rs.1,109", price: "Rs 909", star: "/images/slides/stars.jpg", moreoption: "more options", validity: "Price valid Aug 31-Oct 11 or while supply lasts", supplylasts: "Supply lasts", cart: "/images/slides/cart.png", like: "/images/slides/like.png" },
 
@@ -277,15 +278,14 @@ function Home() {
               autoPlay={true}
               animationDuration={1500}
               infinite={true}
-              disableButtonsControl={false}
-              keyboardNavigation
+              disableButtonsControls
               items={offers?.map((offerimg, key) => <Offer offerimg={offerimg} />)}
 
             />
           </div>
         </Fragment>
         <Fragment>
-          <div className="title mt40 bold-text text-center font20">
+          <div className="title bold-text text-center font20">
             What's NEW at IKEA
           </div>
           <div className="whatsnew_wrapper">
@@ -327,7 +327,7 @@ function Home() {
           <div className="desc">
             Ideas based on your recently viewed products
           </div>
-          <div className="looks_wrapper mt40 ">
+          <div className="looks_wrapper mt10">
             <AliceCarousel
               responsive={{ 0: { items: 1 }, 1024: { items: 3 }, 768: { items: 2 } }}
               autoPlay={true}
@@ -348,7 +348,7 @@ function Home() {
           </div>
         </Fragment>
         <Fragment>
-          <div className="ideasimages_container mt40 mb20">
+          <div className="ideasimages_container  mb20">
             <div className="istidea1">
               {ideasimages?.slice(0, 1).map((item) => <Whatnew item={item} />)}
             </div>
