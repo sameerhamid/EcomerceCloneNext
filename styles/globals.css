@@ -268,6 +268,8 @@ input {
   justify-content: center;
 }
 .download_wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 .download_wrapper .leftCircle {
@@ -284,14 +286,14 @@ input {
   right: 0;
   top: 50%;
   width: 400px;
-  height: 218px;
+  height: 216px;
   background-color: #ccff5f;
 }
 .download_wrapper .download_container .sec_section_wrapper {
   position: relative;
   z-index: 2000;
   width: 80%;
-  margin: 2rem auto;
+  margin: 0 auto;
   display: flex;
   gap: 30px;
   justify-content: space-between;
