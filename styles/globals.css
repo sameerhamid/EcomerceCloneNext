@@ -271,6 +271,7 @@ input {
   margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
+  overflow: hidden;
 }
 .download_wrapper .leftCircle {
   position: absolute;
