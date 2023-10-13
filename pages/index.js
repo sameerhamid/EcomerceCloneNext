@@ -23,8 +23,8 @@ const Home = () => {
         <div className="download_container">
           <SecSection />
         </div>
-        <div className="leftCircle"></div>
-        <div className="right_triangle"></div>
+        <div className="left_circle"></div>
+        <div className="right_rectriangle"></div>
       </div>
     </div>
   );

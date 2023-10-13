@@ -268,12 +268,12 @@ input {
   justify-content: center;
 }
 .download_wrapper {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
 }
-.download_wrapper .leftCircle {
+.download_wrapper .left_circle {
   position: absolute;
   left: -150px;
   top: 0;
@@ -282,7 +282,7 @@ input {
   background-color: #ccff5f;
   border-radius: 50%;
 }
-.download_wrapper .right_triangle {
+.download_wrapper .right_rectriangle {
   position: absolute;
   right: 0;
   top: 50%;
