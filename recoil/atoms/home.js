@@ -5,7 +5,6 @@ const { persistAtom } = recoilPersist();
 export const categoryListState = atom({
   key: "categoryListState",
   default: [
-    // "Electronics", "Jewellery"
     {
       icon: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
       name: "Projectors",
@@ -37,15 +36,7 @@ export const categoryListState = atom({
     },
   ],
 });
-export const currentProductState = atom({
-  key: "currentProductState",
-  default: null,
-  effects_UNSTABLE: [persistAtom],
-});
-export const wishListState = atom({
-  key: "wishListState",
-  default: [],
-});
+
 export const productListState = atom({
   key: "productListState",
   default: null,
@@ -321,18 +312,3 @@ export const productListState = atom({
   // ],
 });
 
-export const brandsState = atom({
-  key: "brandsState",
-  default: [
-    { name: "Brand1", image: "brand-logo1.jpg" },
-    { name: "Brand2", image: "brand-logo2.png" },
-    { name: "Brand3", image: "brand-logo3.jpg" },
-    { name: "Brand4", image: "brand-logo4.jpg" },
-  ],
-});
-
-// {label:"Home", image :"/images/cards/redcompra.png", route:"/"},
-// {label:"Electronics", image :"/images/cards/redcompra.png", route:"/electronics"},
-// {label:"Accessories", image :"/images/cards/redcompra.png", route:"/accessories"},
-// {label:"Kitchen", image :"/images/cards/redcompra.png", route:"/kitchen"},
-// {label:"Books", image :"/images/cards/redcompra.png", route:"/books"},
