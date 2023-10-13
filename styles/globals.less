@@ -75,8 +75,16 @@ input {
   background-color: #fff;
   color: var(--primary-text-color);
 }
-.underline-text {
+.underline_text {
   text-decoration: underline;
+}
+
+.white_text{
+  color: var(--white-color) !important;
+}
+
+.bold_text {
+ font-family: "AvenirNextLTPro-Bold";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -237,4 +245,60 @@ input {
 }
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.screen_margin{
+  margin-left: 5vw;
+}
+
+
+
+//NAVBAR STYLING STARTS 
+.navbar_wrapper{
+  display: grid;
+  grid-template-columns: 100px auto;
+  background-color: #fff;
+  padding: 20px 5vw;
+  box-shadow: 0px 0px 10px 4px #ccc;
+  border-radius:0 0 12px 12px;
+  .logo_wrapper{
+    img{
+      width: auto;
+      height: 60px;
+    }
+  }
+
+  .links_wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    align-items: center;
+
+    .link{
+      &:hover{
+        color: red;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+//HERO STYLING STARTS 
+.hero_wrapper{
+  position: relative;
+  img{
+    width: 100%;
+    height: calc(100vh - 106px);
+  }
+
+  .overlay_wrapper{
+    position: absolute;
+    top: 0px;left: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
 }
