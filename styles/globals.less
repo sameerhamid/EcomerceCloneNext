@@ -289,6 +289,7 @@ input {
   img {
     width: 100%;
     height: calc(100vh - 106px);
+    border-radius: 10px;
   }
 
   .overlay_wrapper {
@@ -312,25 +313,23 @@ input {
     img {
       width: 100%;
       height: 190px;
+      object-fit: cover;
       border-radius: 10px;
     }
   }
   .mufiy_wrapper {
-    display: grid;
-
     .mufiy_yellow {
       position: relative;
       background-color: rgb(255, 199, 44);
       display: flex;
       align-items: center;
       height: 190px;
-      width: 95%;
+      width: 94%;
       border-radius: 20px;
     }
     span {
       position: absolute;
-      width: 50%;
-      left: 0;
+      width: 40%;
       margin-left: 10px;
       color: black;
     }
@@ -339,20 +338,41 @@ input {
       background-color: rgb(30, 43, 75);
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      width: 63%;
-      left: 46%;
-      top: 20%;
+      width: 64%;
+      left: 46.8%;
       height: 100px;
-      text-align: left;
+
       span {
         position: absolute;
-        width: 70%;
-        height: 100%;
-        top: 15px;
-        text-wrap: wrap;
+        width: 90%;
+        bottom: 15px;
         color: white;
         margin-left: 10px;
       }
+    }
+  }
+}
+//location section styling starts from here
+.location_wrapper {
+  .logo_location {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .location_images_wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1.1fr;
+    gap: 10px;
+    aspect-ratio: 3/4;
+    .secondcolumn {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    img {
+      width: 100%;
+
+      border-radius: 10px;
     }
   }
 }

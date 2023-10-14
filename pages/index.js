@@ -2,6 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Navbar from "../components/ui-elements/nav-bar/navbar";
+import Locations from "../components/home/Locations";
 
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
   const { t } = useTranslation("common");
 
   return (
-    <div>
+    <div className="homepage_container">
       <Navbar />
 
       <div className="hero_wrapper">
@@ -18,9 +19,12 @@ const Home = () => {
 
         <Overlay />
       </div>
-      <div className="cmr_container">
+      <div className="cmr_container mt40 screen_margin">
         <Cmr />
 
+      </div>
+      <div className="location_container mt40 screen_margin">
+        <Locations />
       </div>
     </div>
   );
@@ -30,9 +34,9 @@ const Home = () => {
 const Overlay = () => {
   return (
     <div className="overlay_wrapper">
-      <div className="text white_text bold_text font20 screen_margin">lorem ipsum dolor sit amet</div>
-      <div className="text white_text bold_text font20 screen_margin">lorem ipsum dolor sit amet</div>
-      <div className="text white_text bold_text font20 screen_margin">lorem ipsum dolor sit amet</div>
+      <div className="text white_text bold_text font20 ">lorem ipsum dolor sit amet</div>
+      <div className="text white_text bold_text font20 ">lorem ipsum dolor sit amet</div>
+      <div className="text white_text bold_text font20 ">lorem ipsum dolor sit amet</div>
     </div>
   )
 }
@@ -40,15 +44,15 @@ const Overlay = () => {
 
 const Cmr = () => {
   return (
-    <div className="cmr_wrapper screen screen_margin mt20 mb20">
+    <div className="cmr_wrapper ">
       <div className="cmrimg_wrapper">
         <img src="/images/homeimgs/cmr_img.png" alt="" />
       </div>
       <div className="mufiy_wrapper">
         <div className="mufiy_yellow">
-          <span className="font20">lorem ipsum is  dummy text</span>
-          <div className="mufiy_blue font20">
-            <span>lorem ipusm is the dummy text </span>
+          <span className="font16 yellow_text">lorem ipsum is  dummy text</span>
+          <div className="mufiy_blue">
+            <span className="font16">lorem ipusm is the dummy text </span>
           </div>
         </div>
       </div>
