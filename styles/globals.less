@@ -253,7 +253,7 @@ input {
   // margin-right: 2vw;
 }
 
-.content_wrapper{
+.content_wrapper {
   width: 90vw;
   margin: auto;
 }
@@ -319,17 +319,16 @@ input {
     img {
       width: 100%;
       height: 100%;
-
     }
   }
   .mufiy_wrapper {
     background-color: rgb(255, 199, 44);
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      padding-left: 20px;
-      position: relative;
-      // overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+    // overflow: hidden;
     // .mufiy_yellow {
     //   position: relative;
     //   // background-color: rgb(255, 199, 44);
@@ -345,7 +344,7 @@ input {
     //   color: black;
     // }
 
-    .yellow_text{
+    .yellow_text {
       width: 40%;
     }
     .mufiy_blue {
@@ -361,8 +360,8 @@ input {
       align-items: center;
       padding-left: 20px;
 
-      .blue_overlay_text{
-        width:80%
+      .blue_overlay_text {
+        width: 80%;
       }
 
       // span {
@@ -456,4 +455,46 @@ input {
       // background-image: url("https://turbusdweb.kupos.cl/images/turbus/services/Turbus-icon-active.svg");
     }
   }
+}
+
+// highlights styling starts
+
+.highlights_wrpper {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  .highlights_heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .highlights_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    align-items: center;
+
+    .card_contaienr {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    .card_title {
+      display: flex;
+      width: 160px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card_desc {
+      width: 200px;
+      text-align: center;
+    }
+  }
+}
+.heading_text {
+  text-align: center;
 }

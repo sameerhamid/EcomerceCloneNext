@@ -4,9 +4,41 @@ import { useRouter } from "next/router";
 import Navbar from "../components/ui-elements/nav-bar/navbar";
 import Locations from "../components/home/Locations";
 import SlideimgsSec from "../components/home/SlideimgsSec";
+import HeadingBold from "../components/ui-elements/HeadingBold";
 
 
 const Home = () => {
+  const highlights = [
+    {
+      id: 1,
+      imgUrl: '/images/homeimgs/highlight1.svg',
+      title: 'Mayor ',
+      boldTitle: 'cobertura',
+      desc: 'Nuestra red de operadores recorre el país de norte a sur.'
+    },
+    {
+      id: 2,
+      imgUrl: '/images/homeimgs/highlight2.svg',
+      title: 'Soporte ',
+      boldTitle: 'en línea',
+      desc: '¡Cuenta con nosotros! Estamos para resolver tus dudas.'
+    },
+    {
+      id: 3,
+      imgUrl: '/images/homeimgs/highlight3.svg',
+      title: 'Mejores ',
+      boldTitle: 'ofertas',
+      desc: '¡Únete a turbus.cl y disfruta de las mejores ofertas!'
+    },
+    {
+      id: 4,
+      imgUrl: '/images/homeimgs/highlight4.svg',
+      title: 'Viaja ',
+      boldTitle: 'ea flexible',
+      desc: 'Realiza tus transacciones de forma segura.'
+    },
+
+  ]
   const router = useRouter();
   const { t } = useTranslation("common");
 
@@ -28,7 +60,22 @@ const Home = () => {
       <div className="slideimg_container mt40 screen_margin">
         <SlideimgsSec />
       </div> */}
+
+
+      {/* highlights container  */}
+
+      <div className="highlights_wrpper">
+        <HeadingBold text="¡Llevamos tus viajes" boldText="al siguiente nivel!" fontSize="font22" />
+        <div className="highlights_cards">
+          {highlights.map((card, key) => <HighlightCard card={card} key={key} />)}
+        </div>
+      </div>
+
+
     </div>
+
+
+
   );
 }
 
@@ -96,4 +143,16 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 export default Home;
+
+
+
+const HighlightCard = ({ card }) => {
+  return <div className="card_contaienr">
+    <img src={card.imgUrl} alt="" width={100} />
+    <HeadingBold text={card.title} fontSize="font18" boldText={card.boldTitle} />
+    <div className="card_desc font-18">
+      {card.desc}
+    </div>
+  </div>
+}
 
