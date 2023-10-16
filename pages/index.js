@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Navbar from "../components/ui-elements/nav-bar/navbar";
 import Locations from "../components/home/Locations";
+import SlideimgsSec from "../components/home/SlideimgsSec";
 
 
 const Home = () => {
@@ -21,6 +22,12 @@ const Home = () => {
       <div className="cmr_container mt40 screen_margin">
         <Cmr />
 
+      </div>
+      <div className="location_container mt40 screen_margin">
+        <Locations />
+      </div>
+      <div className="slideimg_container mt40 screen_margin">
+        <SlideimgsSec />
       </div>
     </div>
   );
