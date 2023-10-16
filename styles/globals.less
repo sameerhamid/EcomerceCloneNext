@@ -250,7 +250,12 @@ input {
 
 .screen_margin {
   margin-left: 5vw;
-  margin-right: 2vw;
+  // margin-right: 2vw;
+}
+
+.content_wrapper{
+  width: 90vw;
+  margin: auto;
 }
 
 //NAVBAR STYLING STARTS
@@ -309,46 +314,64 @@ input {
   display: grid;
   grid-template-columns: 2.5fr 3fr;
   gap: 45px;
+  margin-top: 40px;
   .cmrimg_wrapper {
     img {
       width: 100%;
-      height: 190px;
-      object-fit: cover;
-      border-radius: 10px;
+      height: 100%;
+
     }
   }
   .mufiy_wrapper {
-    .mufiy_yellow {
-      position: relative;
-      background-color: rgb(255, 199, 44);
+    background-color: rgb(255, 199, 44);
+      border-radius: 20px;
       display: flex;
       align-items: center;
-      height: 190px;
-      width: 94%;
-      border-radius: 20px;
-    }
-    span {
-      position: absolute;
+      padding-left: 20px;
+      position: relative;
+      // overflow: hidden;
+    // .mufiy_yellow {
+    //   position: relative;
+    //   // background-color: rgb(255, 199, 44);
+    //   display: flex;
+    //   align-items: center;
+    //   height: 190px;
+    //   // width: 94%;
+    // }
+    // span {
+    //   position: absolute;
+    //   width: 40%;
+    //   margin-left: 10px;
+    //   color: black;
+    // }
+
+    .yellow_text{
       width: 40%;
-      margin-left: 10px;
-      color: black;
     }
     .mufiy_blue {
       position: absolute;
       background-color: rgb(30, 43, 75);
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
-      width: 64%;
-      left: 46.8%;
-      height: 100px;
+      width: calc(50% + 5vw);
+      right: -4.55vw;
+      height: 66%;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
 
-      span {
-        position: absolute;
-        width: 90%;
-        bottom: 15px;
-        color: white;
-        margin-left: 10px;
+      .blue_overlay_text{
+        width:80%
       }
+
+      // span {
+      //   position: absolute;
+      //   width: 90%;
+      //   bottom: 15px;
+      //   color: white;
+      //   margin-left: 10px;
+      // }
     }
   }
 }

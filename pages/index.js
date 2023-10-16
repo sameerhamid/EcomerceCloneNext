@@ -19,16 +19,15 @@ const Home = () => {
         <img src="/images/generic/hero-img.jpeg" alt="" />
         <Overlay />
       </div>
-      <div className="cmr_container mt40 screen_margin">
+      <div className="cmr_container mt40 content_wrapper">
         <Cmr />
-
       </div>
-      <div className="location_container mt40 screen_margin">
+      {/* <div className="location_container mt40 screen_margin">
         <Locations />
       </div>
       <div className="slideimg_container mt40 screen_margin">
         <SlideimgsSec />
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -52,12 +51,12 @@ const Cmr = () => {
         <img src="/images/homeimgs/cmr_img.png" alt="" />
       </div>
       <div className="mufiy_wrapper">
-        <div className="mufiy_yellow">
-          <span className="font16 yellow_text">lorem ipsum is  dummy text</span>
-          <div className="mufiy_blue">
-            <span className="font16">lorem ipusm is the dummy text </span>
-          </div>
+        {/* <div className="mufiy_yellow"> */}
+        <span className="font16 yellow_text font20 bold-text">¡Únete a Muvify y disfruta de las mejores y más exclusivas ofertas!</span>
+        <div className="mufiy_blue">
+          <span className="font30 blue_overlay_text">¿Ya eres parte de Muvify?</span>
         </div>
+        {/* </div> */}
       </div>
     </div>)
 }
