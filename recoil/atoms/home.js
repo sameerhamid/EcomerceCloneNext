@@ -312,3 +312,9 @@ export const productListState = atom({
   // ],
 });
 
+
+
+export const authState = atom({
+  key: "authState",
+  default: "login"
+})

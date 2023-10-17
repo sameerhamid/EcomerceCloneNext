@@ -13,6 +13,22 @@
   --ikea-font: "Noto IKEA", "Noto Sans", "Roboto", "Open Sans", system-ui,
     sans-serif !important;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -415,4 +431,109 @@ input {
 }
 .heading_text {
   text-align: center;
+}
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+.signin_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 100vh;
+  overflow: hidden;
+}
+.signin_wrapper .left_container {
+  padding: 2rem 4rem;
+  background-color: #ccff5f;
+  display: flex;
+  flex-direction: column;
+  gap: 22%;
+}
+.signin_wrapper .left_container .logo {
+  width: 120px;
+}
+.signin_wrapper .left_container .logo img {
+  width: 100%;
+  height: 100%;
+}
+.signin_wrapper .left_container .message_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signin_wrapper .left_container .message_container .heading {
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.signin_wrapper .riht_wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2rem 0;
+}
+.signin_wrapper .riht_wrapper .right_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.signin_wrapper .riht_wrapper .right_container .sign_up_link {
+  cursor: pointer;
+}
+.signin_wrapper .riht_wrapper .login_right_container {
+  margin-top: 16%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.signin_wrapper .riht_wrapper .login_right_container .sign_up_link {
+  cursor: pointer;
+}
+.input_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+.input_container input {
+  border: 2px solid #ccc;
+  outline: none;
+  padding: 12px 14px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.checkbox_container {
+  width: 70%;
+  display: flex;
+  gap: 10px;
+}
+.checkbox_container input {
+  width: 20px;
+  height: 20px;
+}
+.selector_container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+.selector_container .selector {
+  border: none;
+  outline: none;
+  padding: 12px 14px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.my_btn {
+  width: 70%;
+  padding: 1rem 0;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
 }
