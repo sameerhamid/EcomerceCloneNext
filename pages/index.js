@@ -5,6 +5,7 @@ import Navbar from "../components/ui-elements/nav-bar/navbar";
 import Locations from "../components/home/Locations";
 import SlideimgsSec from "../components/home/SlideimgsSec";
 import HeadingBold from "../components/ui-elements/HeadingBold";
+import Catagories from "../components/catagories/catagories";
 
 
 const Home = () => {
@@ -72,7 +73,10 @@ const Home = () => {
       </div>
 
 
+      <Catagories />
     </div>
+
+
 
 
 
