@@ -498,12 +498,19 @@ input {
   gap: 8px;
   justify-content: center;
 }
-.input_container input {
-  border: 2px solid #ccc;
+.input_container .text_field {
   outline: none;
-  padding: 12px 14px;
-  height: 50px;
-  border-radius: 10px;
+  font-size: 1rem;
+}
+.password_wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+.password_wrapper .outlined_input {
+  outline: none;
   font-size: 1rem;
 }
 .checkbox_container {
@@ -523,11 +530,6 @@ input {
   justify-content: center;
 }
 .selector_container .selector {
-  border: none;
-  outline: none;
-  padding: 12px 14px;
-  height: 50px;
-  border-radius: 10px;
   font-size: 1rem;
 }
 .my_btn {

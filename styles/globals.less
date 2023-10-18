@@ -19,6 +19,15 @@
   width: 6px;
 }
 
+// ::-webkit-scrollbar {
+//   max-height: 10%;
+//   height: 10%;
+// }
+
+// ::-webkit-scrollbar-track {
+//   max-height: 20%;
+//   height: 20%;
+// }
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -598,12 +607,27 @@ input {
   label {
     // font-size: 20px;
   }
-  input {
-    border: 2px solid #ccc;
+  .text_field {
     outline: none;
-    padding: 12px 14px;
-    height: 50px;
-    border-radius: 10px;
+    // border-radius: 10px;
+    font-size: 1rem;
+  }
+}
+
+// password input styling starts
+
+.password_wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  label {
+    // font-size: 20px;
+  }
+  .outlined_input {
+    outline: none;
+    // border-radius: 10px;
     font-size: 1rem;
   }
 }
@@ -636,11 +660,7 @@ input {
     // font-size: 20px;
   }
   .selector {
-    border: none;
-    outline: none;
-    padding: 12px 14px;
-    height: 50px;
-    border-radius: 10px;
+    // border-radius: 10px;
     font-size: 1rem;
     // background-color: #fff;
   }
