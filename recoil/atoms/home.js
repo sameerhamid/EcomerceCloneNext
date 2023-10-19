@@ -318,3 +318,9 @@ export const authState = atom({
   key: "authState",
   default: "login"
 })
+
+export const categoriesState = atom({
+  key: "categoriesState",
+  default: null,
+  effects_UNSTABLE: [persistAtom],
+})

@@ -690,10 +690,11 @@ input {
       .alice-carousel__stage {
         // display: flex;
         // gap: 20px;
-        .alice-carousel__stage-item __cloned {
+        .alice-carousel__stage-item {
           width: 200px;
           img {
             width: 100%;
+            cursor: pointer;
           }
         }
       }
@@ -707,6 +708,7 @@ input {
       height: 50%;
       display: flex;
       align-items: center;
+      width: fit-content;
       .alice-carousel__prev-btn-item {
         background-color: #f5efefd5;
         height: 100px;
@@ -723,7 +725,7 @@ input {
       // text-align: end;
       right: 0;
       top: 30%;
-
+      width: fit-content;
       height: 50%;
       display: flex;
       align-items: center;
@@ -740,6 +742,69 @@ input {
         font-weight: bold;
         color: #000;
       }
+    }
+  }
+}
+
+// catagories page styling starts
+
+.catagory_page_wrapper {
+  .catagory_container {
+    margin-top: 1.4rem;
+    margin: 1.4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    .left_side {
+      display: flex;
+      flex-direction: column;
+      margin-left: 2rem;
+      gap: 1rem;
+      border-right: 2px solid #233;
+    }
+
+    .right_side {
+      margin: 0 2rem;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 4px;
+      // row-gap: 1rem;
+    }
+  }
+}
+
+// filtered categories styling starts
+
+.filtered_categories_wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+
+  .item_img {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 90%;
+      padding: 1rem 1rem;
+    }
+  }
+
+  .item_details {
+    background-color: #fafafa;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    padding: 1rem 16px;
+    text-wrap: wrap;
+    .strike_price {
+      text-decoration: line-through;
+      padding-left: 4px;
     }
   }
 }

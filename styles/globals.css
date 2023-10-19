@@ -548,11 +548,12 @@ input {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item __cloned {
+.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item {
   width: 200px;
 }
-.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item __cloned img {
+.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item img {
   width: 100%;
+  cursor: pointer;
 }
 .catagories_wrapper .alice-carousel .alice-carousel__prev-btn {
   position: absolute;
@@ -561,6 +562,7 @@ input {
   height: 50%;
   display: flex;
   align-items: center;
+  width: fit-content;
 }
 .catagories_wrapper .alice-carousel .alice-carousel__prev-btn .alice-carousel__prev-btn-item {
   background-color: #f5efefd5;
@@ -576,6 +578,7 @@ input {
   position: absolute;
   right: 0;
   top: 30%;
+  width: fit-content;
   height: 50%;
   display: flex;
   align-items: center;
@@ -591,4 +594,54 @@ input {
   font-size: 2rem;
   font-weight: bold;
   color: #000;
+}
+.catagory_page_wrapper .catagory_container {
+  margin-top: 1.4rem;
+  margin: 1.4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.catagory_page_wrapper .catagory_container .left_side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  gap: 1rem;
+  border-right: 2px solid #233;
+}
+.catagory_page_wrapper .catagory_container .right_side {
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 4px;
+}
+.filtered_categories_wrapper {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+}
+.filtered_categories_wrapper .item_img {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filtered_categories_wrapper .item_img img {
+  width: 90%;
+  padding: 1rem 1rem;
+}
+.filtered_categories_wrapper .item_details {
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 1rem 16px;
+  text-wrap: wrap;
+}
+.filtered_categories_wrapper .item_details .strike_price {
+  text-decoration: line-through;
+  padding-left: 4px;
 }
