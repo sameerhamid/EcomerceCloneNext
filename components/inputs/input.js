@@ -20,6 +20,7 @@ const Input = (props) => {
                 placeholder={props.placeholder}
                 className='text_field'
             />
+            {props.error && <span>{props.errorMesage}</span>}
         </div>
     )
 }

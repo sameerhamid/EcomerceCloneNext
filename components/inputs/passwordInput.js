@@ -34,6 +34,7 @@ const PasswordInput = (props) => {
                     }
                     label={props.label}
                 />
+                {props.error && <span>{props.errorMesage}</span>}
             </FormControl>
         </div>
 

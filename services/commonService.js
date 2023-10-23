@@ -176,7 +176,7 @@ const CommonService = {
     let newItemsArr = [...cartList];
     let qty = increase
       ? product?.quantity + 1
-      : product?.quantity <= 1 ? product?.quantity - 0 :  product?.quantity - 1;
+      : product?.quantity <= 1 ? product?.quantity - 0 : product?.quantity - 1;
 
     let tempProduct = {
       ...product,
@@ -844,12 +844,12 @@ const CommonService = {
           indexOfColon >= 0
             ? coach_details[i].floorNo
             : berthLower
-            ? 0
-            : berthUpper
-            ? 1
-            : floor
-            ? ""
-            : 0;
+              ? 0
+              : berthUpper
+                ? 1
+                : floor
+                  ? ""
+                  : 0;
         seatJson["berthType"] = berthType;
         // seatJson['berthType'] = CommonService.isTrain()
         //   ? berthType
@@ -1025,15 +1025,15 @@ const CommonService = {
       let coachLayoutLocal = CommonService.copyObject(coachLayout);
       let currentSeatJson =
         coachLayoutLocal[currentSeat["object"].row_id][
-          currentSeat["object"].col_id
+        currentSeat["object"].col_id
         ];
 
       if (
         selectedSeatsToBook.length <
-          (metaData &&
+        (metaData &&
           metaData.max_seats_allowed_by_op[selectedService.travel_id]
-            ? metaData.max_seats_allowed_by_op[selectedService.travel_id]
-            : metaData.max_seats_allowed) ||
+          ? metaData.max_seats_allowed_by_op[selectedService.travel_id]
+          : metaData.max_seats_allowed) ||
         currentSeatJson.isSelected
       ) {
         currentSeatJson.isSelected = !currentSeatJson.isSelected;
@@ -1059,9 +1059,9 @@ const CommonService = {
           // selectedSeats.push( (CommonService.isTrain() ? ((selectedSeatsToBook[i].floor_no+1)+'_') : '') + selectedSeatsToBook[i].number);
           selectedSeats.push(
             selectedSeatsToBook[i].floor_no +
-              1 +
-              "_" +
-              selectedSeatsToBook[i].number
+            1 +
+            "_" +
+            selectedSeatsToBook[i].number
           );
           if (!selectedSeatTypes[selectedSeatsToBook[i].type]) {
             selectedSeatTypes[selectedSeatsToBook[i].type] = [];
@@ -1324,11 +1324,11 @@ const CommonService = {
         rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <=
-          (window.innerHeight ||
-            document.documentElement.clientHeight) /*or $(window).height() */ &&
+        (window.innerHeight ||
+          document.documentElement.clientHeight) /*or $(window).height() */ &&
         rect.right <=
-          (window.innerWidth ||
-            document.documentElement.clientWidth) /*or $(window).width() */
+        (window.innerWidth ||
+          document.documentElement.clientWidth) /*or $(window).width() */
       );
     }
   },
@@ -1475,14 +1475,14 @@ const CommonService = {
         : null;
       (passengerDetailsOnward[0].idCardType =
         this.props.common.loginData &&
-        Object.keys(this.props.common.loginData).length
+          Object.keys(this.props.common.loginData).length
           ? this.idCardTypes.find(
-              (it) => it.value == this.props.common.loginData.identity_type
-            )
+            (it) => it.value == this.props.common.loginData.identity_type
+          )
           : this.idCardTypes.find((it) => it.value == 7)),
         (passengerDetailsOnward[0].idCardNumber =
           this.props.common.loginData &&
-          Object.keys(this.props.common.loginData).length
+            Object.keys(this.props.common.loginData).length
             ? this.props.common.loginData.identity_val
             : null);
       this.props.actions.setPassengerDetailsOnward(passengerDetailsOnward);
