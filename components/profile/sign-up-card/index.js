@@ -60,7 +60,7 @@ export const SignUpCard = () => {
             <div className="heading">Become a member of TURBUS Family today. Did we mention it's free to join? <span>Get the details.</span></div>
             <Input label="First Name" placeholder="First Name" type="text" value={inputText?.name} handleChange={val => onTextChange(val, "name")} errorMesage={inputText?.nameErrorMessage} error={inputText?.nameError} />
             <Input label="Surname" placeholder="Surname" type="text" value={inputText?.surname} handleChange={val => onTextChange(val, 'surname')} errorMesage={inputText?.surnameErrorMessage} error={inputText?.surnameError} />
-            <Input label="Birthdate" placeholder="Birthdate" type="text" value={inputText?.birthdate} handleChange={val => onTextChange(val, "birthdate")} errorMesage={inputText?.birthdateErrorMessage} error={inputText?.birthdateError} />
+            <Input label="Birthdate" type="date" value={inputText?.birthdate} handleChange={val => onTextChange(val, "birthdate")} errorMesage={inputText?.birthdateErrorMessage} error={inputText?.birthdateError} />
             <Selector label="Gender" handleChange={gender => setGender(gender)} gender={gender} genderOptions={genderOptions} />
             <Input label="Post code" placeholder="Post code" type="text" value={inputText?.postcode} handleChange={val => onTextChange(val, "postcode")} errorMesage={inputText?.postcodeErrorMessage} error={inputText?.postcodeError} />
             <Input label="Mobile" placeholder="Mobile Number" type="number" value={(inputText?.mobnum)} handleChange={val => onTextChange(val, "mobnum")} errorMesage={inputText?.mobileErrorMessage} error={inputText?.mobileError} />

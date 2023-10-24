@@ -13,8 +13,9 @@ const Input = (props) => {
             /> */}
 
             <TextField
+                type={props.type}
                 error={props.error}
-                label={props.label}
+                label={props?.type !== "date" ? props.label : null}
                 defaultValue={props.value}
                 onChange={e => props.handleChange(e.target.value)}
                 placeholder={props.placeholder}
