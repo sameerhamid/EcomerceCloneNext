@@ -5,14 +5,14 @@ const Navbar = () => {
     const router = useRouter()
     return (
         <div className="navbar_wrapper">
-            <div className="logo_wrapper">
+            <div className="logo_wrapper" onClick={() => router.push("/")}>
                 <img src="/images/logo.png" alt="logo" />
             </div>
             <div className="links_wrapper">
-                <div className='link'>Home</div>
+                <div className='link' onClick={() => router.push("/")}>Home</div>
                 <div className='link'>About us</div>
-                <div className='link'>Contact us</div>
-                <div className='link' onClick={() => router.push("signin")}>Sign in</div>
+                <div className='link' onClick={() => router.push('/movify')}>Movify</div>
+                <div className='link' onClick={() => router.push("/signin")}>Sign in</div>
             </div>
         </div>
     )
