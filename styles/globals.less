@@ -550,6 +550,7 @@ input {
     gap: 22%;
     .logo {
       width: 120px;
+      cursor: pointer;
       img {
         width: 100%;
         height: 100%;
@@ -844,10 +845,12 @@ input {
           }
           li {
             padding: 8px;
-            &:hover {
-              background-color: #1c294d;
-              color: #ffc72c;
-            }
+            cursor: pointer;
+          }
+
+          .active {
+            background-color: #1c294d !important;
+            color: #ffc72c !important;
           }
         }
       }
@@ -974,4 +977,44 @@ input {
   }
 
   // movify two styling starts
+
+  .movify_two_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    .heading {
+      display: flex;
+      padding-bottom: 16px;
+      border-bottom: 3px solid #ffc72c;
+      align-self: center;
+    }
+    .title {
+      font-size: 16px;
+    }
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 2rem;
+      align-items: center;
+
+      .tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // width: 100%;
+        gap: 5px;
+        background-color: #808080;
+        padding: 14px 26px;
+        border-radius: 40px;
+        font-weight: bold;
+        color: #fff;
+      }
+      .active {
+        color: #ffc72c !important;
+        background-color: #1c294d !important;
+      }
+    }
+  }
 }

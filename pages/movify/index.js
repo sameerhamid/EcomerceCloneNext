@@ -7,12 +7,12 @@ import MovifyFour from '../../components/movify/movify-four'
 
 const index = () => {
     const tabs = [
-        { id: 1, title: "¿Qué es Muvify?", },
-        { id: 2, title: "Categorías de socio", },
-        { id: 3, title: "Pesos Muvify", },
-        { id: 4, title: "Descuentos exclusivos", },
+        { id: 0, title: "¿Qué es Muvify?", },
+        { id: 1, title: "Categorías de socio", },
+        { id: 2, title: "Pesos Muvify", },
+        { id: 3, title: "Descuentos exclusivos", },
     ]
-    const [tabId, setTabId] = useState(1)
+    const [tabId, setTabId] = useState(0)
     return (
         <div>
             <Navbar />
@@ -25,7 +25,7 @@ const index = () => {
                         </div>
                         <div className="movify_items">
                             <ul>
-                                {tabs.map(tab => (<li key={tab.id} onClick={() => setTabId(tab.id)} >
+                                {tabs.map(tab => (<li key={tab.id} onClick={() => setTabId(tab.id)} className={`${tab.id == tabId ? "active" : null}`}>
                                     {tab.title}</li>
                                 ))}
                             </ul>
@@ -33,7 +33,7 @@ const index = () => {
                     </div>
                 </div>
                 <div className="right_movify">
-                    {tabId == 1 ? <MovifyOne /> : tabId == 2 ? <MovifyTwo /> : tabId == 3 ? <MovifyThree /> : tabId == 4 ? <MovifyFour /> : null}
+                    {tabId == 0 ? <MovifyOne /> : tabId == 1 ? <MovifyTwo /> : tabId == 2 ? <MovifyThree /> : tabId == 3 ? <MovifyFour /> : null}
                 </div>
             </div>
         </div>

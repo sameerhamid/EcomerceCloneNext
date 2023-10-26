@@ -263,7 +263,7 @@ input {
 .navbar_wrapper .links_wrapper {
   display: flex;
   justify-content: flex-end;
-  gap: 24px;
+  gap: 12px;
   align-items: center;
 }
 .navbar_wrapper .links_wrapper .link:hover {
@@ -451,6 +451,7 @@ input {
 }
 .signin_wrapper .left_container .logo {
   width: 120px;
+  cursor: pointer;
 }
 .signin_wrapper .left_container .logo img {
   width: 100%;
@@ -548,19 +549,10 @@ input {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.catagories_wrapper
-  .alice-carousel
-  .alice-carousel__wrapper
-  .alice-carousel__stage
-  .alice-carousel__stage-item {
+.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item {
   width: 200px;
 }
-.catagories_wrapper
-  .alice-carousel
-  .alice-carousel__wrapper
-  .alice-carousel__stage
-  .alice-carousel__stage-item
-  img {
+.catagories_wrapper .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item img {
   width: 100%;
   cursor: pointer;
 }
@@ -573,10 +565,7 @@ input {
   align-items: center;
   width: fit-content;
 }
-.catagories_wrapper
-  .alice-carousel
-  .alice-carousel__prev-btn
-  .alice-carousel__prev-btn-item {
+.catagories_wrapper .alice-carousel .alice-carousel__prev-btn .alice-carousel__prev-btn-item {
   background-color: #f5efefd5;
   height: 100px;
   display: flex;
@@ -596,10 +585,7 @@ input {
   align-items: center;
   justify-content: flex-end;
 }
-.catagories_wrapper
-  .alice-carousel
-  .alice-carousel__next-btn
-  .alice-carousel__next-btn-wrapper {
+.catagories_wrapper .alice-carousel .alice-carousel__next-btn .alice-carousel__next-btn-wrapper {
   background-color: #f5efefd5;
   height: 100px;
   display: flex;
@@ -696,10 +682,11 @@ input {
 }
 .movify_wrapper .left_movify .card .movify_items ul li {
   padding: 8px;
+  cursor: pointer;
 }
-.movify_wrapper .left_movify .card .movify_items ul li:hover {
-  background-color: #1c294d;
-  color: #ffc72c;
+.movify_wrapper .left_movify .card .movify_items ul .active {
+  background-color: #1c294d !important;
+  color: #ffc72c !important;
 }
 .movify_wrapper .right_movify .movify_comp_wrapper {
   display: flex;
@@ -739,19 +726,10 @@ input {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
 }
-.movify_wrapper
-  .right_movify
-  .movify_comp_wrapper
-  .illustration
-  .left_illustration
-  img {
+.movify_wrapper .right_movify .movify_comp_wrapper .illustration .left_illustration img {
   width: 180px;
 }
-.movify_wrapper
-  .right_movify
-  .movify_comp_wrapper
-  .illustration
-  .right_illustration {
+.movify_wrapper .right_movify .movify_comp_wrapper .illustration .right_illustration {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -759,12 +737,7 @@ input {
   font-weight: bold;
   font-size: 14px;
 }
-.movify_wrapper
-  .right_movify
-  .movify_comp_wrapper
-  .illustration
-  .right_illustration
-  .illustration_btn {
+.movify_wrapper .right_movify .movify_comp_wrapper .illustration .right_illustration .illustration_btn {
   background-color: #ffc72c;
   padding: 1rem 0;
   border-radius: 30px;
@@ -799,12 +772,7 @@ input {
 .movify_wrapper .right_movify .movify_one_cards .card_container .card img {
   width: 80px;
 }
-.movify_wrapper
-  .right_movify
-  .movify_one_cards
-  .card_container
-  .card
-  .card_description {
+.movify_wrapper .right_movify .movify_one_cards .card_container .card .card_description {
   text-align: center;
 }
 .movify_wrapper .right_movify .information_capsule {
@@ -828,4 +796,41 @@ input {
 }
 .movify_wrapper .right_movify .information_capsule img {
   padding-right: 10px;
+}
+.movify_wrapper .movify_two_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.movify_wrapper .movify_two_wrapper .heading {
+  display: flex;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #ffc72c;
+  align-self: center;
+}
+.movify_wrapper .movify_two_wrapper .title {
+  font-size: 16px;
+}
+.movify_wrapper .movify_two_wrapper .tabs {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+.movify_wrapper .movify_two_wrapper .tabs .tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: #808080;
+  padding: 14px 26px;
+  border-radius: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.movify_wrapper .movify_two_wrapper .tabs .active {
+  color: #ffc72c !important;
+  background-color: #1c294d !important;
 }

@@ -4,6 +4,7 @@ import { SignInCard } from '../../components/profile/sign-in-card'
 import { SignUpCard } from '../../components/profile/sign-up-card'
 import { useRecoilValue } from 'recoil'
 import { authState } from '../../recoil/atoms/home'
+import { useRouter } from 'next/router'
 
 const index = () => {
 
@@ -13,12 +14,13 @@ const index = () => {
 
     const authStateValue = useRecoilValue(authState)
 
+    const router = useRouter()
 
     return (
         <div className='signin_wrapper'>
 
             <div className="left_container">
-                <div className="logo">
+                <div className="logo" onClick={() => router.push('/')}>
                     <img src="/images/logo.png" alt="" />
                 </div>
                 <div className='message_container'>
