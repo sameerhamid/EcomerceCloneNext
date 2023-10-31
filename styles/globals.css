@@ -834,3 +834,221 @@ input {
   color: #ffc72c !important;
   background-color: #1c294d !important;
 }
+.movify_wrapper .movify_two_wrapper .cards_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .left .left_card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  padding: 2rem 1.4rem;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .left .left_card img {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .left .left_card h1 {
+  font-size: 16px;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .left .left_card .index_level {
+  color: #ffc72c;
+  font-size: 22px;
+  font-weight: bold;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .left .left_card .index_level_3 {
+  width: 100%;
+  background-color: #ffc72c;
+  padding: 10px 0;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right .right_cards {
+  display: flex;
+  align-items: self-start;
+  gap: 16px;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right .right_cards img {
+  width: 50px;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right .right_cards .card_details {
+  display: flex;
+  flex-direction: column;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right .right_cards .card_details .title {
+  font-size: 14px;
+}
+.movify_wrapper .movify_two_wrapper .cards_wrapper .right .right_cards .card_details .desc {
+  font-size: 14px;
+}
+.movify_wrapper .movify_three_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.movify_wrapper .movify_three_wrapper .heading {
+  text-align: center;
+  border-bottom: 3px solid #ffc72c;
+  padding-top: 1rem;
+  width: fit-content;
+}
+.movify_wrapper .movify_three_wrapper .movify_three_title {
+  margin-top: 1.5rem;
+  font-size: 15px;
+  text-align: center;
+}
+.movify_wrapper .movify_three_wrapper .list_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.movify_wrapper .movify_three_wrapper .list_wrapper img {
+  width: 80px;
+}
+.movify_wrapper .movify_three_wrapper .list_wrapper .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.movify_wrapper .movify_three_wrapper .list_wrapper .list .list_title_sec {
+  font-weight: bold;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper {
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .card_heading {
+  font-weight: bold;
+  font-size: 20px;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .card_title {
+  font-size: 15px;
+  text-align: center;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  border-radius: 20px;
+  position: relative;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .cards .card img {
+  width: 150px;
+}
+.movify_wrapper .movify_three_wrapper .card_wrapper .cards .card .card_num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffc72c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.movify_wrapper .movify_four_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_heading {
+  text-align: center;
+  border-bottom: 3px solid #ffc72c;
+  padding-bottom: 10px;
+  width: fit-content;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card {
+  padding: 12px 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  position: relative;
+  box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 1px 0px 12px 1px rgba(0, 0, 0, 0.54);
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card img {
+  width: 120px;
+  height: 100px;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card .btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card .btns .btn {
+  width: 74px;
+  padding: 2px;
+  border: 2px solid #2f2f2f;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card .btns .btn span {
+  color: #ffc72c;
+  font-size: 18px;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card .info {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.movify_wrapper .movify_four_wrapper .movify_four_cards .card .info img {
+  width: 36px;
+  height: 36px;
+}
