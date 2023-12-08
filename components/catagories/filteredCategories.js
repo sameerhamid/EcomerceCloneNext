@@ -15,4 +15,5 @@ const FilteredCategories = ({ item }) => {
     )
 }
 
+
 export default FilteredCategories

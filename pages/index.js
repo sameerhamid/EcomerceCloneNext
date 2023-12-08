@@ -2,8 +2,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import Navbar from "../components/ui-elements/nav-bar/navbar";
-import Locations from "../components/home/Locations";
-import SlideimgsSec from "../components/home/SlideimgsSec";
 import HeadingBold from "../components/ui-elements/HeadingBold";
 import Catagories from "../components/catagories/catagories";
 
@@ -75,10 +73,6 @@ const Home = () => {
 
       <Catagories />
     </div>
-
-
-
-
 
   );
 }

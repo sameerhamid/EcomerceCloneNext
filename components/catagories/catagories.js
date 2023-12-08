@@ -6,10 +6,8 @@ import { categoriesState } from '../../recoil/atoms/home';
 import { useRouter } from 'next/router';
 const Catagories = () => {
     const [catagoriesSelected, setCategoriesSelected] = useRecoilState(categoriesState);
-
     const router = useRouter()
     const items = [
-
         {
             id: 1,
             category: 'mobile',

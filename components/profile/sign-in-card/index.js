@@ -1,10 +1,10 @@
 import { useState } from "react"
-import Checkbox from "../../inputs/checkbox"
 import Input from "../../inputs/input"
 import Button from "../../inputs/button"
 import { useSetRecoilState } from "recoil"
 import { authState } from "../../../recoil/atoms/home"
 import PasswordInput from "../../inputs/passwordInput"
+import MyCheckbox from "../../inputs/myCheckBox"
 
 export const SignInCard = () => {
     // const [emailOrPhnNum, setEmailOrPhnNum] = useState(null)
@@ -44,7 +44,7 @@ export const SignInCard = () => {
             <Input label="Password" placeholder="Password" type="password" value={password} handleChange={val => setPassword(val)} /> */}
             <PasswordInput label="Password" placeholder="Password" type="password" handleChange={val => onTextChange(val, "password")} value={inputText?.password} errorMesage={inputText?.passwordErrorMessage} error={inputText?.passworError} />
 
-            <Checkbox type="checkbox" label="Stay Signed in until you sign out" handleChange={checked => setChecked(!checked)} defaultChecked={checked} />
+            <MyCheckbox type="checkbox" label="Stay Signed in until you sign out" handleChange={checked => setChecked(!checked)} defaultChecked={checked} />
 
             <Button btnText="Continue" btnColor="CCFF5F" textcolor="111111" onClick={handleSubmit} />
 

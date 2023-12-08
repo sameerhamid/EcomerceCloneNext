@@ -1,11 +1,11 @@
 import { useState } from "react"
-import Checkbox from "../../inputs/checkbox"
 import Input from "../../inputs/input"
 import Button from "../../inputs/button"
 import Selector from "../../inputs/selector"
 import { useSetRecoilState } from "recoil"
 import { authState } from "../../../recoil/atoms/home"
 import CommonService from "../../../services/commonService"
+import MyCheckbox from "../../inputs/myCheckBox"
 
 export const SignUpCard = () => {
     const genderOptions = [
@@ -66,10 +66,10 @@ export const SignUpCard = () => {
             <Input label="Mobile" placeholder="Mobile Number" type="number" value={(inputText?.mobnum)} handleChange={val => onTextChange(val, "mobnum")} errorMesage={inputText?.mobileErrorMessage} error={inputText?.mobileError} />
             <Input label="Email" placeholder="Email" type="email" value={inputText?.email} handleChange={val => onTextChange(val, "email")} errorMesage={inputText?.emailErrorMessage} error={inputText?.emailError} />
 
-            <Checkbox type="checkbox" label="
+            <MyCheckbox type="checkbox" label="
                     I would like to receive news, tips and marketing offers from TURBUS." handleChange={checked => setChecked(!checked)} defaultChecked={checked} />
 
-            <Checkbox type="checkbox" label="
+            <MyCheckbox type="checkbox" label="
                         I have read and understood the Terms & Conditions and Privacy Policy.
                         " handleChange={checked => setChecked(!checked)} defaultChecked={checked} />
 
